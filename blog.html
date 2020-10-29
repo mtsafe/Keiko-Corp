@@ -20,7 +20,9 @@
   </head>
   <body>
     <main>
-      <nav class="navbar">
+      <nav class="navbar" style="position: -webkit-sticky;
+  position: sticky;
+  top: 0;">
           <label class="toggle-bar-mobile" id="toggle-bar">
             <input type="checkbox" id="toggle-checkbox">
             <span class="slider round" id="slider-round"></span>
@@ -35,7 +37,9 @@
             <li>
               <!-- <img src="./assets/images/keiko-logo.png" class="logo" alt="Keiko Corp" /> -->
             </li>
-            <li class="active" id="home"> <a href="/">Home
+          <li> 
+             <a href="/">
+               <button id="home">Home</button>
             </a> 
           </li>
             <li>
@@ -92,10 +96,20 @@
           </ul>
         </nav>
       <div class="container">
+        <!-- Newsletter Section -->
+        <section class="newsletter">
+          <h2>Subscribe to our newsletter</h2>
+          <div class="newsletter__signup">
+            <input type="email" placeholder="Enter your email">
+            <button>Subscribe</button>
+          </div>
+        </section>
+
         <section class="blog">
           <div class="blog__pictures">
             <!-- Blog Post 1 -->
             <div class="blog__picture blog__picture1 post1">
+              <div class="overlay"></div>
               <div class="blog__picture--content blog__picture--content1">
                 <p>September 22, 2019</p>
                 <h3>
@@ -106,6 +120,7 @@
             </div>
             <!-- Blog Post 3 -->
             <div class="blog__picture blog__picture2 post2">
+              <div class="overlay"></div>
               <div class="blog__picture--content">
                 <p>November 13, 2019</p>
                 <h3>Enjoy the Little Things</h3>
@@ -113,6 +128,7 @@
             </div>
             <!-- Blog Post 3 -->
             <div class="blog__picture blog__picture3 post3">
+              <div class="overlay"></div>
               <div class="blog__picture--content">
                 <p>May 10, 2019</p>
                 <h3>3 Easy Steps To Create a Blog Article</h3>
@@ -122,7 +138,7 @@
           <!-- 2 section Blog Posts -->
           <section class="blog__posts">
             <article class="blog__post">
-              <div class="blog__post--image"></div>
+              <div class="blog__post--image post4"></div>
               <div class="blog__post--content">
                 <h4>7 Air-Cleaning Tropicals You Need in Your Space</h4>
                 <p>
@@ -133,7 +149,7 @@
               </div>
             </article>
             <article class="blog__post">
-              <div class="blog__post--image"></div>
+              <div class="blog__post--image post5"></div>
               <div class="blog__post--content">
                 <h4>
                   Why Wireframing is an Essential Skill for More Than just
